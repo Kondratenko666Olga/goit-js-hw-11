@@ -7,15 +7,20 @@
     <title>Gallery searcher</title>
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-8df847bf.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-8c59ed88.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-eb023db6.css">
   </head>
   <body>
     
-<form class="search" action="">
-  <input class = "inputSearch" type="text" placeholder = "Search images...">  </input>
+<form class="search" action="submit">
+  <input class = "inputSearch" type="text" required  placeholder = "Search images...">  </input>
   <button class="btnSearch" type="submit">Search</button>
 </form>
 
+<span class="loader"></span>
+
+<ul class="gallery"></ul>
 
     
     
